@@ -1,10 +1,8 @@
 name: My first Test in Github Action
-'on': push
+on: push
 jobs:
-  my-jobs:
-    build: 
-      runs-on: ubuntu:latest
-      name: Testing the first worflow
-      steps:
-      - uses: actions/checkout@v2
+  build: 
+    runs-on: ubuntu:latest
+    steps:
+    - uses: actions/checkout@v2
   
